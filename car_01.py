@@ -37,6 +37,7 @@ def find_nan(object_name):
             x = x + 1
     return x
 
+
 for i in all_columns:
     if find_nan(i) < total_items:
         print(i)
