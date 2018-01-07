@@ -64,4 +64,4 @@ car_data['power'] = car_data['power'].apply(lambda x: float(x) ) # if x != '81/7
 for i in all_columns:
     into_dic(i)
 
-
+pd.DataFrame.to_csv(car_data, 'input/without_mixed_type.csv', index=None)
