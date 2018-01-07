@@ -26,3 +26,4 @@ for i in all_columns:
     into_dic(i)
 
 print (total_items)
+print(car_overview['engine_torque'])
