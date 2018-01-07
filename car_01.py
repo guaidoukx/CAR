@@ -74,4 +74,4 @@ for i in object_columns:
     print(i, car_data[i].dtypes, car_overview[i])
 
 
-pd.DataFrame.to_csv(car_data, 'input/without_mixed_type.csv', index=None)
+# pd.DataFrame.to_csv(car_data, 'input/without_mixed_type.csv', index=None)
