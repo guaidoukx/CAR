@@ -11,7 +11,8 @@ all_columns = ['sale_date', 'class_id', 'sale_quantity', 'brand_id', 'compartmen
                'car_height', 'total_quality', 'equipment_quality', 'rated_passenger', 'wheelbase',
                'front_track', 'rear_track']
 total_items = len(car_data)
-print("hao %d"  % total_items)
+
+
 car_overview = {}
 def into_dic(object_name):
     def count_classes(object_name):
@@ -21,8 +22,8 @@ def into_dic(object_name):
         return L
     car_overview[object_name] = count_classes(object_name)
 
-# for i in all_columns:
-#     into_dic(i)
+for i in all_columns:
+    into_dic(i)
 #     print(i, car_overview[i][1])
 
 # for i in range(len(car_data)):
@@ -38,12 +39,9 @@ def find_nan(object_name):
     return x
 
 
-for i in all_columns:
-    if find_nan(i) < total_items:
-        print(i)
 
 
-# print(car_data.iloc[0]['driven_type_id'].dtype)
+print(car_data['fuel_type_id'].dtype)
 # print(set(car_data['driven_type_id']))
 # print(len(set(car_data['driven_type_id'])))
-# print(car_overview['driven_type_id'])
+print(car_overview['fuel_type_id'])
